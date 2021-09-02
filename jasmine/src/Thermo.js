@@ -12,9 +12,9 @@ class Thermo {
   }
 
   up() {
-    let maxTemp = this._setMaxTemp();
-    if(this.temp < maxTemp) this.temp++;
-    this._checkEnergyProfile();
+  let maxTemp = this._setMaxTemp();
+  if(this.temp < maxTemp) this.temp++;
+  this._checkEnergyProfile();
   }
 
   down() {
