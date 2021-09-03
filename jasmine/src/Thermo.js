@@ -1,14 +1,12 @@
-const START_TEMP = 20;
-const MIN_TEMP = 10;
-const LOW_USAGE_LIMIT = 18;
-const MAX_ECO = 25;
-const MAX_NOT_ECO = 32;
-
 class Thermo {
-  // static START_TEMP = 20;
+  static #START_TEMP = 20;
+  static #MIN_TEMP = 10;
+  static #LOW_USAGE_LIMIT = 18;
+  static #MAX_ECO = 25;
+  static #MAX_NOT_ECO = 32;
 
   constructor() {
-    this.temp = START_TEMP;
+    this.temp = Thermo.#START_TEMP;
     this.isEcoMode = true;
     this.energyProfile = 'medium-usage';
   }
@@ -20,7 +18,7 @@ class Thermo {
   }
 
   down() {
-    if (this.temp > MIN_TEMP) this.temp--;
+    if (this.temp > Thermo.#MIN_TEMP) this.temp--;
     this.checkEnergyProfile();
   }
 
@@ -33,14 +31,14 @@ class Thermo {
   }
 
   reset() {
-    this.temp = START_TEMP;
+    this.temp = Thermo.#START_TEMP;
     this.checkEnergyProfile();
   }
 
   checkEnergyProfile() {
-    if (this.temp < LOW_USAGE_LIMIT) {
+    if (this.temp < Thermo.#LOW_USAGE_LIMIT) {
       this.energyProfile = 'low-usage';
-    } else if (this.temp <= MAX_ECO) {
+    } else if (this.temp <= Thermo.#MAX_ECO) {
       this.energyProfile = 'medium-usage';
     } else {
       this.energyProfile = 'high-usage';
@@ -49,9 +47,9 @@ class Thermo {
 
   _setMaxTemp() {
     if (this.isEcoMode === true) {
-      return MAX_ECO;
+      return Thermo.#MAX_ECO;
     } else {
-      return MAX_NOT_ECO;
+      return Thermo.#MAX_NOT_ECO;
     }
   }
 }
