@@ -34,3 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTemperature();
   });
 });
+
+fetch(
+  'https://api.openweathermap.org/data/2.5/weather?id=2172797&appid=c4006e567679daeb4492f02e7800452b'
+);
