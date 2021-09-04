@@ -36,5 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 fetch(
-  'https://api.openweathermap.org/data/2.5/weather?id=2172797&appid=c4006e567679daeb4492f02e7800452b'
-);
+  'https://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&appid=c4006e567679daeb4492f02e7800452b'
+)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data.main.temp);
+  });
