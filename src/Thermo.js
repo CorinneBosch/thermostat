@@ -48,4 +48,8 @@ class Thermo {
   _setMaxTemp() {
     return this.isEcoMode === true ? Thermo.#MAX_ECO : Thermo.#MAX_NOT_ECO;
   }
+
+  xoxo() {
+    return ENV[WEATHER_API];
+  }
 }

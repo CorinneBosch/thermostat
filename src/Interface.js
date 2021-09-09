@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#city-error').innerText = '';
   };
 
+  // const key = ENV[WEATHER_API];
   const displayWeather = (city) => {
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c4006e567679daeb4492f02e7800452b&units=metric`;
 
