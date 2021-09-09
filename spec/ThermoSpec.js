@@ -1,5 +1,5 @@
 describe('Thermo', () => {
-  let thermo;
+  // let thermo;
 
   beforeEach(() => {
     thermo = new Thermo();
@@ -58,27 +58,27 @@ describe('Thermo', () => {
         thermo.up();
       }
     });
-    
-    it('has a maximim temperature of 32˚C', () => { 
+
+    it('has a maximim temperature of 32˚C', () => {
       thermo.up();
       expect(thermo.temp).toEqual(32);
     });
 
     it('has high energy usage', () => {
-      expect(thermo.energyProfile).toEqual('high-usage')
+      expect(thermo.energyProfile).toEqual('high-usage');
     });
 
     it('has low energy usage', () => {
-      thermo.reset()
+      thermo.reset();
       for (let i = 0; i < 16; i++) {
         thermo.down();
       }
-      expect(thermo.energyProfile).toEqual('low-usage')
+      expect(thermo.energyProfile).toEqual('low-usage');
     });
 
     it('has medium energy usage', () => {
-      thermo.reset()
-      expect(thermo.energyProfile).toEqual('medium-usage')
+      thermo.reset();
+      expect(thermo.energyProfile).toEqual('medium-usage');
     });
   });
 });

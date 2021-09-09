@@ -46,10 +46,6 @@ class Thermo {
   }
 
   _setMaxTemp() {
-    if (this.isEcoMode === true) {
-      return Thermo.#MAX_ECO;
-    } else {
-      return Thermo.#MAX_NOT_ECO;
-    }
+    return this.isEcoMode === true ? Thermo.#MAX_ECO : Thermo.#MAX_NOT_ECO;
   }
 }

@@ -12,7 +12,6 @@
       <br />
       <h1>Thermostat</h1>
       <h1 id="temp"></h1>
-      <!-- <form> -->
       <button id="temp-up">+</button>
       <button id="temp-down">-</button>
       <button id="temp-reset">reset</button>
@@ -20,7 +19,13 @@
       <br />
       <button id="eco-mode-on">on</button>
       <button id="eco-mode-off">off</button>
-      <!-- </form> -->
+      <h3>Weather forecast: </h3>
+      <h4>Current temperature in <span id="location">London</span>: <span id="current-temp"></span></h4>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <button type='submit' id="submit">Sumit</button>
+        <p id="city-error"></p>
+      </form>
     </section>
   </body>
 </html>
