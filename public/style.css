@@ -17,11 +17,12 @@ body {
   font-weight: 200;
 }
 
-form {
+form,
+div {
   text-align: center;
   line-height: 30px;
   height: 80%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 h1 {
@@ -33,7 +34,8 @@ h1 {
 
 h2,
 h3,
-h4 {
+h4,
+h5 {
   text-align: center;
   font-style: normal;
   font-weight: 200;
