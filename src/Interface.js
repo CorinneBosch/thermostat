@@ -95,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //       document.querySelector('#weather_temp').innerText = data.main.temp;
 //     });
 // });
-// FOR INPUT CITY OPTION LZ
 
 // const city = 'London';
 // const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=c4006e567679daeb4492f02e7800452b`;
@@ -106,5 +105,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //   .then((data) => {
 //     document.querySelector('#weather_temp').innerText = data.main.temp;
 //   });
-
-// 2643743
