@@ -33,7 +33,7 @@ Goals:
 
 Open the application in your terminal with `open view/index.html`
 
-A new browser window will open up automatically.
+A new browser window will open up automatically.\
 Now you can play around with your temperatures or check out the weather forecast of different cities!
 
 ## Run test 
