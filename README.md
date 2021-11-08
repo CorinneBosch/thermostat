@@ -29,7 +29,7 @@ Goals:
 1. **Fork** this [thermostat repository](https://github.com/CorinneBosch/thermostat/) 
 2. Then clone **your** fork to your computer.
 
-## Interact with the program
+## Interact with the programme
 
 Open the application in your terminal with `open view/index.html`
 
