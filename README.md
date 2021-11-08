@@ -75,4 +75,4 @@ $ open SpecRunner.html
 
 • You can search for the weather forecast of any city
 ```
-Source of challege requirements: [Makersacadeny - GitHub](https://github.com/makersacademy/course/blob/main/bookmark_manager/)
+Source of challege requirements: [Makersacadeny - GitHub](https://github.com/makersacademy/course/tree/main/thermostat_es6)
