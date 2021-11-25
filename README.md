@@ -8,11 +8,15 @@ Thermostat
             `'-._10___20___30___40___50___60___70___80___90__100__110.-`
             
 ```
+______
+
+[Set up](#Setup) | [Interact](#Interact) | [Run Tests](#Tests) | [Challenge Specifications](#User-Stories)
 
 ## Afternoon challenge: Thermostat
 In this challenge we learned & implementing the follwoing practices while pair programming:
 
-- Introduction to JavaScrit and API's
+- Introduction to JavaScrit
+- Integrate [Weather API](https://openweathermap.org/api)
 - Making Ajax requests
 - Agile Methology for user stories
 - Separating frontend concerns into model, view and controller.
@@ -24,19 +28,19 @@ Goals:
 - Explain how asynchronous programming is different from synchronous, blocking programming.
 - Apply a coherent process to learn a new language.
 
-## Setup
+## <a name="Setup">Set up</a>
 
-1. **Fork** this [thermostat repository](https://github.com/CorinneBosch/thermostat/) 
+1. **Fork** this [thermostat repository](https://github.com/CorinneBosch/thermostat/)
 2. Then clone **your** fork to your computer.
 
-## Interact with the programme
+## <a name="Interact">Interact with the programme</a>
 
 Open the application in your terminal with `open view/index.html`
 
 A new browser window will open up automatically.\
 Now you can play around with your temperatures or check out the weather forecast of different cities!
 
-## Run test 
+## <a name="Tests">Run test</a>
 
 To run all tests open SpecRunner in your directoy, this will open a new browser window where all tests are displayed. 
 
@@ -44,7 +48,7 @@ To run all tests open SpecRunner in your directoy, this will open a new browser 
 $ open SpecRunner.html
 ```
 
-## Thermostat Specifications:
+## <a name="User-Stories">Thermostat Specifications:</a>
 ```
 • Thermostat starts at 20 degrees
 
